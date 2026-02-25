@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../css/registration.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="registration-box">
+        <h1>Registrati a K</h1>
+
+        <div class="form">
+            <form>
+                <div class="name_surname">
+                    <input type="text" id="name" name="name" placeholder="Nome" required>
+                    <input type="text" id="surname" name="surname" placeholder="Cognome" required>
+                </div>
+
+                <h4>Data di nascita:</h4>
+                <input type="date" required>
+
+                <h4>Genere:</h4>
+                <div class="radio_gender-box">
+                    <div class="radio_gender-element">
+                        <label>
+                            <input type="radio" name="gender" value="donna">
+                            Donna
+                        </label>
+                    </div>
+                    <div class="radio_gender-element">
+                        <label>
+                            <input type="radio" name="gender" value="uomo">
+                            Uomo
+                        </label>
+                    </div>
+                    <div class="radio_gender-element">
+                        <label>
+                            <input type="radio" name="gender" value="altro">
+                            Altro
+                        </label>
+                    </div>
+                </div>
+                <h4></h4>
+                <div class="email_pass">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+
+                <button type="submit">Registrati</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

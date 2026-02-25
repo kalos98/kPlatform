@@ -1,0 +1,53 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="www.k.com/XMLSchema"
+           xmlns="www.k.com/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:element name="posts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="post" maxOccurs="unbounded">
+                    <xs:complexType>
+
+                        <xs:sequence>
+                            <xs:element name="author" type="xs:string"/>
+                            <xs:element name="dateTime" type="xs:dateTime"/>
+                            <xs:element name="message">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="280"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="comments">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="comment" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="author" type="xs:string"/>
+                                                    <xs:element name="dateTime" type="xs:dateTime"/>
+                                                    <xs:element name="message">
+                                                       <xs:simpleType>
+                                                           <xs:restriction base="xs:string">
+                                                               <xs:maxLength value="180"/>
+                                                           </xs:restriction>
+                                                       </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="id" type="xs:string" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="views" type="xs:integer" default="0"/>
+                        </xs:sequence>
+
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

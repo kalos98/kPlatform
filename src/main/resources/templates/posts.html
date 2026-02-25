@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<posts xmlns:th="http://www.thymeleaf.org">
+  <th:block th:each="post : ${posts}">
+    <post>
+      <postId th:text="${post.postId}"/>
+      <username th:text="${post.user.username}"/>
+      <createdAt th:text="${post.createdAt}"/>
+      <content th:text="${post.content}"/>
+      <comments>
+        <th:block th:each="comment : ${post.comments}">
+          <comment>
+              <commentId th:text="${comment.commentId}"/>
+              <username th:text="${comment.user.username}"/>
+              <createdAt th:text="${comment.createdAt}"/>
+              <content th:text="${comment.content}"/>
+          </comment>
+        </th:block>
+      </comments>
+      <commentCount th:text="${#lists.size(post.comments)}"/>
+    </post>
+  </th:block>
+</posts>

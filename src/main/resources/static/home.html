@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/css/home.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/home.js"></script>
+    <script src="/js/comment.js"></script>
+</head>
+<body onload="loadXML()">
+
+    <header class="header">
+    </header>
+
+    <div class="sidebar-box">
+        <div class="button_sidebar" id="button_sidebar_logo">
+            <a href="home.html"><img src="/png/logo.png" width="40" height="40"></a>
+        </div>
+        <div class="button_sidebar">
+            <a href="home.html"><img src="/png/home.png" width="32" height="32"></a>
+        </div>
+        <div class="button_sidebar">
+            <img id="newPost_button" src="/png/add.png" width="32" height="32">
+        </div>
+        <div class="button_sidebar">
+            <a href="/profile"><img src="/png/profile.png" width="32" height="32"></a>
+        </div>
+        <div class="button_sidebar" id="button_sidebar_logout">
+            <a href="/logout"><img src="/png/logout.png" width="32" height="32"></a>
+        </div>
+    </div>
+
+    <div id="main-box" class="main-box"></div>
+
+    <div id="modal" class="modal">
+        <div id="modal-content" class="modal-content" >
+
+        </div>
+    </div>
+</body>
+</html>

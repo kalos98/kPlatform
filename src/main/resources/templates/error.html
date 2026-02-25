@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Error</title>
+  <link href="/css/home.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div style="text-align: center" class="main-box">
+  <h1 class="page-title">Qualcosa è andato storto :(</h1>
+  <img src="/png/crisis-management.png" class="center-image" alt="Error Image">
+  <p style="color: white" th:text="${errorMessage}"></p>
+  <div class="button_error">
+    <a href="/home.html" class="button">Torna alla home</a>
+  </div>
+</div>
+</body>
+</html>

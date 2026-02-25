@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<posts xmlns="www.k.com/XMLSchema">
+    <post id="056">
+        <author>Giuseppe Maurizio</author>
+        <dateTime>2024-11-12T18:54:55</dateTime>
+        <message>
+            Questo post viene dal secondo file xml.
+            Lorem ipsum dolor sit amet.Lorem ipsum dolor
+            sit amet.Lorem ipsum dolor sit amet.
+        </message>
+        <comments>
+            <comment id="001">
+                <author>Mario Rossi</author>
+                <dateTime>2024-11-14T22:54:55</dateTime>
+                <message>
+                    Lorem ipsum dolor sit amet.
+                </message>
+            </comment>
+        </comments>
+        <views>325</views>
+    </post>
+    <post id="057">
+        <author>Calogero Curiale</author>
+        <dateTime>2024-11-12T18:54:55</dateTime>
+        <message>
+            Questo post viene dal secondo file xml.
+            Lorem ipsum dolor sit amet.Lorem ipsum dolor
+            sit amet.Lorem ipsum dolor sit amet.
+        </message>
+        <comments>
+            <comment id="001">
+                <author>Mario Rossi</author>
+                <dateTime>2024-11-14T22:54:55</dateTime>
+                <message>
+                    Lorem ipsum dolor sit amet.
+                </message>
+            </comment>
+            <comment id="002">
+                <author>Roberto Rossi</author>
+                <dateTime>2024-11-14T22:54:55</dateTime>
+                <message>
+                    Lorem ipsum dolor sit amet.
+                </message>
+            </comment>
+            <comment id="003">
+                <author>Alberto Gialli</author>
+                <dateTime>2024-11-14T22:54:55</dateTime>
+                <message>
+                    Lorem ipsum dolor sit amet.
+                </message>
+            </comment>
+        </comments>
+        <views>108</views>
+    </post>
+    <post id="058">
+        <author>Calogero Curiale</author>
+        <dateTime>2024-11-12T18:54:55</dateTime>
+        <message>
+            Questo post viene dal secondo file xml.
+            Lorem ipsum dolor sit amet.Lorem ipsum dolor
+            sit amet.Lorem ipsum dolor sit amet.
+
+        </message>
+        <comments>
+            <comment id="001">
+                <author>Mario Rossi</author>
+                <dateTime>2024-11-14T22:54:55</dateTime>
+                <message>
+                    Lorem ipsum dolor sit amet.
+                </message>
+            </comment>
+            <comment id="002">
+                <author>Roberto Rossi</author>
+                <dateTime>2024-11-14T22:54:55</dateTime>
+                <message>
+                    Lorem ipsum dolor sit amet.
+                </message>
+            </comment>
+            <comment id="003">
+                <author>Alberto Gialli</author>
+                <dateTime>2024-11-14T22:54:55</dateTime>
+                <message>
+                    Lorem ipsum dolor sit amet.
+                </message>
+            </comment>
+        </comments>
+        <views>100</views>
+    </post>
+</posts>

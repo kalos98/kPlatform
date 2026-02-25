@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link href="/css/profile.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <title>Profile</title>
+</head>
+<body>
+<div class="profile-box">
+  <img th:src="@{/profile/profile_photo.jpg}" th:alt="${user.username}" class="profile-pic">
+  <div class="user-info">
+    <p><strong>Username:</strong> <span th:text="${user.username}">Username</span></p>
+    <p><strong>Email:</strong> <span th:text="${user.email}">Email</span></p>
+    <p><strong>Nome e Cognome:</strong> <span th:text="${user.nome + ' ' + user.cognome}">Nome e Cognome</span></p>
+    <p><strong>Data di Nascita:</strong> <span th:text="${#temporals.format(user.data, 'dd/MM/yyyy')}">Data di Nascita</span></p>
+    <p><strong>Genere:</strong>
+      <span th:text="${user.gender == 1 ? 'Femmina' : user.gender == 2 ? 'Maschio' : 'Altro'}">Genere</span>
+    </p>
+  </div>
+  <!-- Bottone per tornare alla Home -->
+  <a href="/" class="home-button">Torna alla Home</a>
+</div>
+</body>
+</html>
